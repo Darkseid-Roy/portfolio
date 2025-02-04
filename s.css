@@ -1,0 +1,236 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #F7FFF7;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    padding: 15px;
+    background: #FFE66D;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar a {
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar a:hover {
+    color: #FFD700;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    padding: 100px 20%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section .text-container {
+    flex: 1;
+    text-align: left;
+    z-index: 2;
+    margin-left: -140px; /* Moves the text more to the left */
+    margin-top: 200px; /* Moves the text slightly down */
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 10px 0;
+}
+
+.hero-section .btn {
+    margin-top: 30px; /* Moves the button further down */
+}
+
+
+.hero-section img {
+    flex: 1;
+    max-width: 240px;
+    height: auto;
+    object-fit: cover;
+    z-index: 2;
+    margin-right: -70px; /* Moves image slightly to the right */
+}
+
+/* SVG Background Styling */
+.hero-section svg {
+    position: absolute;
+    top: -120px;
+    right: 0;
+    left: -70px;
+    width: 2500px;
+    height: 1000px;
+    z-index: -1;
+}
+
+
+/* Buttons */
+.btn-warning {
+    background-color: #FFE66D;
+    border: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-warning:hover {
+    background: #FFD700;
+    color: white;
+}
+
+/* Projects Section */
+.card {
+    border: none;
+    box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.5);
+    transition: transform 0.3s ease;
+    background: #F7FFF7;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about-content{
+    display: flex;
+    gap: 20px;
+}
+.about-container {
+    font-family: 'Playfair Display', serif; /* Fixed font issue */
+    text-align: justify;
+    background:  #F7FFF7;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#about h2{
+    text-align: center;
+}
+.Aboutflex{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.ArkoImage {
+    width: 300px;
+    border: 5px solid #FFE66D;
+}
+
+/* Hover Effects for the Big Boxes */
+.about-container:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: black;
+}
+
+/* Skills Section */
+.skills {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.skills h3 {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: black;
+}
+
+/* Skills Grid (Row Layout) */
+.skillimg {
+    display: flex;
+    flex-direction: row; /* Ensure it's in a row */
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill {
+    text-align: center;
+    width: 100px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Fix skill icon size */
+#about .skill img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Fix text color for better visibility */
+.skill p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333; /* Changed from whitesmoke */
+    transition: color 0.3s ease;
+}
+
+
+/* Hover Effects */
+.skill:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skill:hover img {
+    transform: scale(1.1);
+}
+/* Contact Section */
+.social-icons a {
+    display: inline-block;
+    margin: 10px;
+    font-size: 24px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #F7FFF7;
+}
+
+/* Footer */
+footer {
+    background: #FFE66D;
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
